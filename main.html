@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Adventures Inc.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Outdoor Adventures Inc.</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Outdoor Adventures Inc.</h2>
+            <p>Your one-stop destination for all outdoor activities!</p>
+            <img src="outdoor.png" alt="Outdoor Adventures Logo" class="responsive">
+            <hr>
+            <button onclick="showAlert()">Learn More</button>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Outdoor Adventures Inc., we provide a range of outdoor activities including hiking, camping, and kayaking. Our mission is to connect people with nature and promote healthy, active lifestyles.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Guided Hiking Tours</li>
+                <li>Camping Trips</li>
+                <li>Kayak Rentals</li>
+                <li>Mountain Biking</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Outdoor Adventures Inc.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
